@@ -1,0 +1,28 @@
+<Project Sdk="Dalamud.NET.Sdk/15.0.0">
+  <PropertyGroup>
+    <!-- Overridden by CI: dotnet build -p:Version=$(semantic-release output) -->
+    <Version Condition="'$(Version)' == ''">1.0.0</Version>
+    <AssemblyName>ChatFade</AssemblyName>
+    <RootNamespace>ChatFade</RootNamespace>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <!-- Reading and dimming the chat addons is pointer work against FFXIVClientStructs. -->
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Author>linusfr</Author>
+    <Name>Chat Fade</Name>
+    <Punchline>Fades the chat log out when nobody has said anything for a while.</Punchline>
+    <Description>The chat log sits there whether or not it has anything to show. Chat Fade dims it away after a quiet stretch and brings it back the moment someone talks, you start typing, or a situation you chose to keep it up for begins. Combat spam does not count as conversation unless you say it does.</Description>
+    <ApplicableVersion>any</ApplicableVersion>
+    <DalamudApiLevel>15</DalamudApiLevel>
+    <Tags>chat;hud;interface;utility</Tags>
+    <RepoUrl>https://github.com/linusfr/ffxiv-chat-fade</RepoUrl>
+    <IconUrl>https://raw.githubusercontent.com/linusfr/ffxiv-chat-fade/main/images/icon.png</IconUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="..\images\icon.png" Link="images\icon.png"
+             CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

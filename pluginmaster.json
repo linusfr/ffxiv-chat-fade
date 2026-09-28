@@ -1,0 +1,24 @@
+[
+  {
+    "Author": "linusfr",
+    "Name": "Chat Fade",
+    "InternalName": "ChatFade",
+    "Punchline": "Fades the chat log out when nobody has said anything for a while.",
+    "Description": "The chat log sits there whether or not it has anything to show. Chat Fade dims it away after a quiet stretch and brings it back the moment someone talks, you start typing, or a situation you chose to keep it up for begins. Combat spam does not count as conversation unless you say it does.",
+    "ApplicableVersion": "any",
+    "DalamudApiLevel": 15,
+    "Tags": [
+      "chat",
+      "hud",
+      "interface",
+      "utility"
+    ],
+    "AssemblyVersion": "1.0.0.0",
+    "RepoUrl": "https://github.com/linusfr/ffxiv-chat-fade",
+    "DownloadLinkInstall": "https://github.com/linusfr/ffxiv-chat-fade/releases/latest/download/ChatFade.zip",
+    "DownloadLinkUpdate": "https://github.com/linusfr/ffxiv-chat-fade/releases/latest/download/ChatFade.zip",
+    "DownloadLinkTesting": "https://github.com/linusfr/ffxiv-chat-fade/releases/latest/download/ChatFade.zip",
+    "LastUpdated": 1790540110,
+    "IconUrl": "https://raw.githubusercontent.com/linusfr/ffxiv-chat-fade/main/images/icon.png"
+  }
+]
